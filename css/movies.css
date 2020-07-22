@@ -1,0 +1,132 @@
+html,body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+.wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35%;
+    overflow: hidden;
+}
+.video-container:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    contain: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+
+}
+.video-container video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 56.25vw;
+    min-width: 177.6vh;
+    min-height: 100vh;
+    transform: translate(-50%, -50%);
+
+
+}
+.video-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    color: white;
+    flex-direction: column;
+    font-size: 1.5rem;
+text-transform: capitalize;
+}
+h1{
+    margin: 0;
+    
+}
+h1 span{
+    color: black;
+}
+p{
+    margin-top: 10px;
+    font-weight: 100;
+    text-decoration: capitalize;
+
+}
+.container{
+    width: 210px;
+    float: left;
+    margin-top: 200px;
+    margin-bottom: 30px;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 2%;
+    overflow: auto;
+    cursor: pointer;
+}
+.container:hover{
+    transform: translate(-10px);
+}
+.container a{
+    text-decoration: none!important;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 7px 20px;
+    color:black !important;
+    background: transparent;
+ font-weight: 600;
+    display: inline-block;   
+    
+    
+}
+.container img{
+    border: 2px solid black;
+    border-radius: 30px;
+}
+@media only screen and (max-width:1140px){
+
+
+    .container{
+        width: 210px;
+    float: left;
+    margin-top: 200px;
+    margin-bottom: 30px;
+    margin-left: 20%;
+    margin-right: 0%;
+    padding: 2%;
+    overflow: auto;
+    cursor: pointer;
+    }
+    .video-container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 25%;
+        overflow: hidden;
+    }
+    }

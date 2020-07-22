@@ -1,0 +1,60 @@
+@media only screen and (max-width:1140px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+        height: 447px;
+
+    }
+    .btn{
+        text-decoration: none;
+        padding: 5px 15px;
+        margin: 7px 3px;
+        border: 2px solid white;
+        border-radius: 8px;
+        background: none;
+        color: white;
+        cursor: pointer;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: large;
+        
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+.h-nav-resp{
+    height: 72px;
+
+}
+.v-class-resp{
+    opacity: 0;
+
+}
+.section{
+    flex-direction: column-reverse;
+}
+.buttons{
+    text-align: center;
+}
+.text-big{
+    text-align: center;
+}
+.text-small{
+    text-align: center;
+}
+.paras{
+    padding: 0px;
+}
+}
